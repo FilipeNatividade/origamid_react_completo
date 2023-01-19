@@ -1,12 +1,12 @@
 import { AppRoutes } from "./AppRoute/AppRoutes";
-import { DesafioAppUm } from "./Desafio1/DesafioAppUm";
+import { DesafioApp } from "./Desafio/DesafioApp";
 
 function App() {
   return (
     <div>
-      <DesafioAppUm />
-      <hr />
-      <AppRoutes />
+      <DesafioApp />
+      {/* <hr />
+      <AppRoutes /> */}
     </div>
   );
 }
