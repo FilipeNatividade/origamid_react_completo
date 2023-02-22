@@ -40,10 +40,28 @@ export const GlobalStyle = createGlobalStyle`
 
     a{
        text-decoration :none ;
+       color: #333;
     }
     .container{
         max-width: 50rem;
         padding: 0 1rem;
         margin: 0 auto;
+    }
+
+    .mainContainer{
+      margin-top: 4rem;
+    }
+
+    .animeLeft{
+        opacity: 0;
+        transform: translateX(-20px);
+        animation: animeLeft 1s forwards;
+    }
+
+    @keyframes animeLeft {
+        to{
+            opacity: 1;
+            transform: initial;
+        }
     }
 `;

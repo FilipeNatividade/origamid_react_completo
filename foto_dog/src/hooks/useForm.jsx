@@ -24,7 +24,6 @@ export const useForm = (type) => {
   const validate = (value) => {
     if (type === false) return true;
     if (value.length === 0) {
-      console.log(value);
       setError("Preencha um valor");
       return false;
     } else if (types[type] && !types[type].regex.test(value)) {
@@ -47,6 +46,6 @@ export const useForm = (type) => {
     onChange,
     error,
     validate: () => validate(value),
-    onblur: () => validate(value),
+    onBlur: () => validate(value),
   };
 };
